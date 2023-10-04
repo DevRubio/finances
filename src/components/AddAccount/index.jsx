@@ -1,10 +1,9 @@
-import { Button, Checkbox, Label, Modal, Select, TextInput } from "flowbite-react";
+import { Button, Label, Modal, Select, TextInput } from "flowbite-react";
 import { useState } from "react";
 
 const AddAccount = () => {
-  const [openModal, setOpenModal] = useState("");
-  const [email, setEmail] = useState("");
-  const props = { openModal, setOpenModal};
+  const [openModal, setOpenModal] = useState("")
+  const props = { openModal, setOpenModal}
 
   return (
     <>
