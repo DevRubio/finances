@@ -1,20 +1,23 @@
 import { CardAccounts } from "../CardAccounts/index";
 import { AddAccount } from "../AddAccount";
+import { Grid, Col, Card, Metric, Text } from "@tremor/react";
+
 const Accounts = ({ acounts }) => {
   return (
-    <div className="w-full bg-slate-100 h-full flex flex-col">
-      <div className="grid mt-5 ml-16 mb-8 mr-16 grid-cols-3 gap-2">
+    <div className="bg-slate-100 p-2">  
+      <Grid numItems={1} numItemsSm={3} numItemsLg={5} className="gap-2 m-4">
         {acounts.map((item) => (
-          <CardAccounts
-            color={item.color}
-            key={item.name}
-            name={item.name}
-            balance={item.balance}
-          />
-        ))}
-        <AddAccount />
-      </div>
-    </div>
+            <CardAccounts
+              color={item.color}
+              key={item.name}
+              name={item.name}
+              balance={item.balance}
+            />
+          ))}
+          <AddAccount />    
+    </Grid>
+  </div>
+
   );
 };
 

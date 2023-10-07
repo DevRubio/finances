@@ -2,6 +2,7 @@
 import { Navbar } from './components/Navbar'
 import { Accounts } from './components/Accounts'
 import { AddRecords } from './components/AddRecords'
+import { ContainerCharts } from './components/Charts/ContainerCharts'
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
       <Accounts 
       acounts={acounts}
       />
+      <ContainerCharts/>
       <AddRecords
       acounts={acounts}
       />
